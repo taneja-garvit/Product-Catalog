@@ -1,7 +1,9 @@
 package com.example.demo.repository;
 
-import com.example.demo.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.entity.Product;
+
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -29,17 +31,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
 
 // package com.example.demo.repository;
-// import com.example.productcatalog.entity.Product;  // Our Product entity class
-// import org.springframework.data.domain.Page;        // For pagination (like limit/skip in MongoDB)
-// import org.springframework.data.domain.Pageable;    // Pagination parameters
-// import org.springframework.data.jpa.repository.JpaRepository;  // Base repository interface
-// import org.springframework.data.jpa.repository.Query;  // For custom SQL queries
-// import org.springframework.data.repository.query.Param;  // For query parameters
-// import java.math.BigDecimal;  // For price calculations
-// import java.util.List;        // For returning multiple products
 
-
-// public interface ProductRepository extends JpaRepository<Product,Long> {
 
 
 //     // Method 1: Find products by category (USES INDEX for fast search!)
