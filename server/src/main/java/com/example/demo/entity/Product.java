@@ -4,7 +4,6 @@ import jakarta.persistence.*;  // JPA annotations for database mapping
 import java.math.BigDecimal;   // For precise decimal numbers (like money)
 import java.time.LocalDateTime; // For date/time handling (like Date in JS)
 
-import org.springframework.stereotype.Indexed;
 
 
 
@@ -73,7 +72,7 @@ public class Product {
     public long getId(){
         return id;
     }
-    public void setId(){
+    public void setId(Long id){
         this.id = id;
     }
 
@@ -85,7 +84,7 @@ public class Product {
         this.updatedDate = LocalDateTime.now(); // Update timestamp when changed
 
     }
-    public String getDesciption(){
+    public String getDescription(){
         return description;
     }
     public void setDescription(String description){
